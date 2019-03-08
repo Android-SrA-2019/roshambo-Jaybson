@@ -1,0 +1,17 @@
+<!-- Jeremy Johnson -->
+<!-- Assignment 2 -->
+<!-- March 8th, 2019 -->
+
+<resources>
+    <string name="app_name">RockPaperScissors</string>
+    <string name="win">YOU WON!</string>
+    <string name="lose">YOU LOST!</string>
+    <string name="draw">DRAW!</string>
+    <string name="rock_button">Rock</string>
+    <string name="paper_button">Paper</string>
+    <string name="scissors_button">Scissors</string>
+    <string name="results_text"></string>
+    <string name="gamesWonText">Won:</string>
+    <string name="gamesLostText">Lost:</string>
+    <string name="gamesDrawText">Draw:</string>
+</resources>
