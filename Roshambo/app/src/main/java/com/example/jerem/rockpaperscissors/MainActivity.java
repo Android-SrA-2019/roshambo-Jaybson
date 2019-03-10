@@ -1,7 +1,7 @@
 /**
  * Jeremy Johnson
  * Assignment 2
- * March 8th, 2019
+ * March 9th, 2019
  */
 
 package com.example.jerem.rockpaperscissors;
@@ -32,13 +32,18 @@ public class MainActivity extends AppCompatActivity {
 
 
     /**
-     * This click event gets the selection you made, and the Games selection.
-     * It then uses the Rochambo class to determine if you won or lost or draw the game.
-     * It then updates the result text according to if you won, lost or draw.
-     * I added extra features such as a count  tbat keeps track of the wins/lost/draws.
-     * I also added colored text depending on win/lost/draw, and animations for the ImageViews.
+     * This method will execute once an ImageView is clicked. It will then fire these methods.
      */
     public void onClick(View view){
+        getMoves(view);
+        setText();
+    }
+
+    /**
+     * This is the method that will get the player's move as well as the game's move.
+     * @param view property that will be used to tell which ImageView was clicked.
+     */
+    public void getMoves(View view){
         ImageView playerImg = findViewById(R.id.playersMoveImage);
         ImageView gamesImg = findViewById(R.id.gamesMoveImage);
 
@@ -93,7 +98,13 @@ public class MainActivity extends AppCompatActivity {
                 gamesImg.setImageResource(R.mipmap.ic_scissor_button_round);
                 break;
         }
+    }
 
+    /**
+     * This method will set the text according to if you won, lost or had a draw. It will also
+     * set the counters for Win, Lost, and Draw, and will set the text color as well.
+     */
+    public void setText(){
         /**
          * Sets the textView to tell you if you won, lost, or had a draw.
          */
